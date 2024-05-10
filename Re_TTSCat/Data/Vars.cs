@@ -10,7 +10,7 @@ namespace Re_TTSCat.Data
     {
         public static readonly string ApiBaidu = "https://fanyi.baidu.com/gettts?lan=zh&text=$TTSTEXT&spd=5&source=web";
         public static readonly string ApiBaiduCantonese = "https://fanyi.baidu.com/gettts?lan=cte&text=$TTSTEXT&source=web";
-        public static readonly string ApiYoudao = "http://tts.youdao.com/fanyivoice?word=$TTSTEXT&le=zh&keyfrom=speaker-target";
+        public static readonly string ApiYoudao = "https://dict.youdao.com/dictvoice?audio=$TTSTEXT&le=zh";
         public static readonly string ApiBaiduAi = "https://tsn.baidu.com/text2audio?tex=$TTSTEXT&lan=zh&per=$PERSON&spd=$SPEED&pit=$PITCH&cuid=1234567JAVA&ctp=1&tok=$TOKEN";
         public static readonly string AppDllFileName = Assembly.GetExecutingAssembly().Location;
         public static readonly string AppDllFilePath = (new FileInfo(AppDllFileName)).DirectoryName;
