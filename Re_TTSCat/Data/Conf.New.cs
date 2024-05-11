@@ -47,7 +47,7 @@ namespace Re_TTSCat.Data
                 Vars.SpeechUnavailableString = ex.ToString();
             }
             UseGoogleGlobal = false;
-            AllowDownloadMessage = true;
+            AllowDownloadMessage = false;
             AllowConnectEvents = true;
             ClearQueueAfterDisconnect = true;
             CatchGlobalError = true;

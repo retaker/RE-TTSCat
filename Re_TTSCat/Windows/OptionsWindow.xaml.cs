@@ -259,7 +259,7 @@ namespace Re_TTSCat.Windows
             Vars.CurrentConf.AllowConnectEvents = CheckBox_ProcessEvents.IsChecked ?? true;
             Vars.CurrentConf.CatchGlobalError = CheckBox_CatchGlobalError.IsChecked ?? true;
             Vars.CurrentConf.ClearQueueAfterDisconnect = CheckBox_ClearQueueOnDisconnect.IsChecked ?? true;
-            Vars.CurrentConf.AllowDownloadMessage = CheckBox_AllowDownloadMessage.IsChecked ?? true;
+            Vars.CurrentConf.AllowDownloadMessage = CheckBox_AllowDownloadMessage.IsChecked ?? false;
             Vars.CurrentConf.AutoUpdate = CheckBox_AutoUpdates.IsChecked ?? false;
             Vars.CurrentConf.DebugMode = CheckBox_DebugMode.IsChecked ?? false;
             Vars.CurrentConf.DoNotKeepCache = CheckBox_DoNotKeepCache.IsChecked ?? false;

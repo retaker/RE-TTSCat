@@ -24,19 +24,15 @@
                 <TextBlock Text="支持开发" VerticalAlignment="Top" FontSize="17"/>
             </StackPanel>
             <TextBlock Margin="10,36,10,0" TextWrapping="Wrap" VerticalAlignment="Top">
-                首先，在此感谢您使用本插件。
+                请遵守开源协议，如果您要反馈bug，请善用github中的issue功能。
                 <LineBreak/>
+                同时我也欢迎merge requests.
                 <LineBreak/>
-                我是 Re: TTSCat 的独立开发者，从 2017 年开始进行此插件的开发与维护工作。插件的开发需要投入大量的业余时间和精力，开发者难免也有感到疲惫的时候。
-                <LineBreak/>
-                <LineBreak/>
-                如果您的确觉得插件好用，可以通过捐赠的方式支持我的工作。
-                <LineBreak/>
-                <LineBreak/>
-                当然，如果您不想捐赠，<Underline>也请随意使用</Underline>！向我反馈（发送邮件至 <Hyperlink Click="Hyperlink_Click">re-ttscat@itsmy.app</Hyperlink>）也是向我提供支持的方法之一。我在长期内<Underline>并不打算</Underline>推出“付费功能”或类似设定。因为付费功能的存在一定会出现“破解/分享”与“反破解/付费验证机制”的博弈。此类功能的开发更加浪费时间。
+                https://github.com/retaker/RE-TTSCat
             </TextBlock>
+        <!--
             <Border Margin="10,0,0,10" BorderThickness="2" BorderBrush="Black" Height="100" VerticalAlignment="Bottom" HorizontalAlignment="Left">
-                <Image Source="/Re_TTSCat;component/Resources/qrcode_pay.png"/>
+                <Image Source="/Re_TTSCat;component/Resources/qrcode_pay.png"/> 
             </Border>
             <TextBlock HorizontalAlignment="Left" Margin="117,0,0,10" TextWrapping="Wrap" VerticalAlignment="Bottom">
                 <Run FontSize="14">金额任意 :)</Run>
@@ -46,6 +42,7 @@
                 <LineBreak/>
                 <Run FontSize="16">←</Run> <Run FontSize="16" FontWeight="SemiBold" Foreground="#027AFF">支付宝</Run><Run FontSize="16">扫码支付</Run>
             </TextBlock>
+        -->
         </Grid>
     </Grid>
 </Popup>
