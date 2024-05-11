@@ -29,7 +29,7 @@ namespace Re_TTSCat
                 return;
             }
             string fileName;
-            if (Vars.CurrentConf.EnableUrlEncode)
+            if (Vars.CurrentConf.EnableUrlEncode && Vars.CurrentConf.Engine != 7) // do not encode content to url when using Azure
             {
                 content = HttpUtility.UrlEncode(content);
                 Bridge.ALog("URL 编码完成: " + content);
@@ -61,6 +61,9 @@ namespace Re_TTSCat
                     break;
                 case 6:
                     fileName = await BaiduTTS.AiApi.Download(content, BaiduTTS.AiApi.ParseToSpeechPerson(Vars.CurrentConf.SpeechPerson));
+                    break;
+                case 7:
+                    fileName = await AzureTTS.Download(content);
                     break;
             }
             if (fileName == null)

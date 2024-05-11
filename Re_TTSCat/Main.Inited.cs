@@ -71,6 +71,12 @@ namespace Re_TTSCat
                 Vars.CurrentConf.Engine = 0;
                 await Conf.SaveAsync();
             }
+            if (Vars.CurrentConf.AutoBaiduFallback && Vars.CurrentConf.Engine == 7 && string.IsNullOrWhiteSpace(Vars.CurrentConf.BaiduApiKey))
+            {
+                Log("您正在使用Azure引擎且未配置region/私钥，已自动回落至有道引擎");
+                Vars.CurrentConf.Engine = 4;
+                await Conf.SaveAsync();
+            }
             if (Vars.CurrentConf?.AutoStartOnLoad == true) Start();
             if (!Vars.SystemSpeechAvailable)
             {

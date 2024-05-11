@@ -238,11 +238,11 @@ namespace Re_TTSCat.Data
         /// </summary>
         public string PostData { get; set; }
         /// <summary>
-        /// 百度 API 公钥
+        /// 百度 API 公钥 / Azure Region Code
         /// </summary>
         public string BaiduApiKey { get; set; }
         /// <summary>
-        /// 百度 API 私钥
+        /// 百度 API 私钥 / Azure Application Key
         /// </summary>
         public string BaiduApiSecretKey { get; set; }
 

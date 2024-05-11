@@ -152,6 +152,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="TTSHelper\AzureTTS\AzureTTS.Download.cs" />
     <Compile Include="TTSHelper\BaiduTTS\BaiduTTS.AiApi.Download.cs" />
     <Compile Include="TTSHelper\BaiduTTS\BaiduTTS.AiApi.ParseToSpeechPerson.cs" />
     <Compile Include="TTSHelper\BaiduTTS\BaiduTTS.AiApi.SpeechPerson.cs" />

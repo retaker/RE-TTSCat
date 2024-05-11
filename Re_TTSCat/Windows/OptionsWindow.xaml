@@ -388,6 +388,7 @@
                                     <ComboBoxItem Content="有道（未经加密）" ToolTip="使用网易有道 TTS 引擎&#xA;&#xA;该引擎使用时与服务器的连接未经加密，请酌情使用"/>
                                     <ComboBoxItem Content="用户自定义引擎" ToolTip="使用您在右侧自定义的 TTS 引擎&#xA;&#xA;使用 $TTSTEXT 来代替需要读出的文本"/>
                                     <ComboBoxItem Content="百度（高级版）" ToolTip="使用百度高级 TTS 引擎&#xA;&#xA;您需要在右侧指定百度高级版语音合成引擎的 API 密钥，否则无法正常使用。"/>
+                                    <ComboBoxItem Content="Azure" ToolTip="Azure"/>
                                 </ComboBox>
                             </StackPanel>
                             <StackPanel Margin="0,5,0,0">
@@ -491,12 +492,14 @@
                         <TextBox x:Name="TextBox_PostData" FontFamily="Consolas" TextWrapping="Wrap" Text="{}{&#xA;  [&#xA;    {&#xA;      &quot;Name&quot;: &quot;Key1&quot;,&#xA;      &quot;Value&quot;: &quot;SGVsbG8gV29ybGQh&quot;,&#xA;    },&#xA;    {&#xA;      &quot;Name&quot;: &quot;Key2&quot;,&#xA;      &quot;Value&quot;: &quot;WW91J3JlIEF3ZXNvbWUh&quot;&#xA;    }&#xA; ]&#xA;}" Margin="167,234,0,0" AcceptsReturn="True" ScrollViewer.VerticalScrollBarVisibility="Visible" ToolTip="POST 数据" Height="59" VerticalAlignment="Top" HorizontalAlignment="Left" Width="320"/>
                         <local:IconTextBlock x:Name="TextBlock_Headers" HorizontalAlignment="Left" Margin="167,298,0,0" IconGlyph="&#xF1C0;" Text="自定义请求头" VerticalAlignment="Top"/>
                         <TextBox x:Name="TextBox_Headers" FontFamily="Consolas" TextWrapping="Wrap" Text="{}{&#xA;  [&#xA;    {&#xA;      &quot;Name&quot;: &quot;Accept-Encoding&quot;,&#xA;      &quot;Value&quot;: &quot;gzip&quot;,&#xA;    },&#xA;    {&#xA;      &quot;Name&quot;: &quot;Host&quot;,&#xA;      &quot;Value&quot;: &quot;tts.example.com&quot;&#xA;    }&#xA; ]&#xA;}" Margin="167,313,0,0" AcceptsReturn="True" ScrollViewer.VerticalScrollBarVisibility="Visible" ToolTip="请求头数据，JSON 格式，与 POST 数据格式保持一致" Height="59" VerticalAlignment="Top" HorizontalAlignment="Left" Width="320"/>
-                        <local:IconTextBlock x:Name="TextBlock_BaiduApiKey" Margin="0,5,162,0" IconGlyph="&#xF023;" Text="百度高级版 API 公钥" VerticalAlignment="Top" HorizontalAlignment="Right" Width="129"/>
+                        <local:IconTextBlock x:Name="TextBlock_BaiduApiKey" Margin="0,5,48,0" IconGlyph="&#xF023;" Text="百度高级版 API 公钥/Azure Region code" VerticalAlignment="Top" HorizontalAlignment="Right"/>
+                    <!--
                         <TextBlock Margin="0,5,5,0" HorizontalAlignment="Right" VerticalAlignment="Top">
                             <Hyperlink Click="Hyperlink_Click_2" ToolTip="在百度官网了解高级版接口的收费及密钥获取方法">了解更多</Hyperlink>
                         </TextBlock>
+                    -->
                         <TextBox x:Name="TextBox_BaiduApiKey" FontFamily="Consolas" VerticalAlignment="Top" Margin="0,20,5,0" ToolTip="百度高级版引擎的 API 公钥" HorizontalAlignment="Right" Width="286" />
-                        <local:IconTextBlock x:Name="TextBlock_BaiduApiSecretKey" Margin="0,41,161,0" IconGlyph="&#xF084;" Text="百度高级版 API 私钥" VerticalAlignment="Top" HorizontalAlignment="Right" Width="130"/>
+                        <local:IconTextBlock x:Name="TextBlock_BaiduApiSecretKey" Margin="0,41,98,0" IconGlyph="&#xF084;" Text="百度高级版 API 私钥/Azure Key" VerticalAlignment="Top" HorizontalAlignment="Right" />
                         <PasswordBox x:Name="TextBox_BaiduApiSecretKey" VerticalAlignment="Top" Margin="0,56,5,0" ToolTip="百度高级版引擎的 API 私钥" HorizontalAlignment="Right" Width="286" />
                         <Button x:Name="Button_ClearCache" Margin="0,0,85,5" HorizontalAlignment="Right" Width="75" Click="Button_ClearCache_Click" Height="25" VerticalAlignment="Bottom">
                             <local:IconTextBlock IconGlyph="&#xF2ED;" Text="清理缓存"/>
