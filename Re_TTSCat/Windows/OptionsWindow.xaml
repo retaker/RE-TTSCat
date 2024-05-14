@@ -804,7 +804,7 @@
                                             AppVeyor<LineBreak/>
                                             Genteure - 弹幕姬官网<LineBreak/>
                                             <LineBreak/><Run FontFamily="{StaticResource FontAwesome}">&#xF1F9;</Run> <Run FontWeight="Bold">版权信息</Run><LineBreak/>
-                                            Copyright (C) 2021 Elepover.
+                                            Copyright (C) 2024 Retaker, Elepover.
                                         </TextBlock>
                                         <TextBlock Style="{StaticResource IconCaptionStyle}" TextAlignment="Center" FontWeight="Regular" FontSize="12" HorizontalAlignment="Center" FontFamily="Consolas">
                                                 This program is free software: you can redistribute it and/or modify<LineBreak/>

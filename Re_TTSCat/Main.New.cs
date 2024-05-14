@@ -10,8 +10,8 @@ namespace Re_TTSCat
         public static bool IsEnabled = false;
         public Main()
         {
-            PluginAuth = "Elepover";
-            PluginCont = "elepover@outlook.com";
+            PluginAuth = "Retaker, Elepover";
+            PluginCont = "i@retaker.me;elepover@outlook.com";
             PluginDesc = "直接读出你收到的弹幕和礼物！";
             PluginName = "Re: TTSCat";
             PluginVer = Vars.CurrentVersion.ToString();
