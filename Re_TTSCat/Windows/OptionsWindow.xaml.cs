@@ -350,6 +350,7 @@ namespace Re_TTSCat.Windows
             Vars.CurrentConf.PostData = TextBox_PostData.Text;
             Vars.CurrentConf.BaiduApiKey = TextBox_BaiduApiKey.Text;
             Vars.CurrentConf.BaiduApiSecretKey = TextBox_BaiduApiSecretKey.Password;
+            Vars.CurrentConf.AzureVoiceName = TextBox_AzureVoiceName.Text;
             try
             {
                 Vars.CurrentConf.Headers = JsonConvert.DeserializeObject<List<Header>>(TextBox_Headers.Text);
@@ -444,6 +445,7 @@ namespace Re_TTSCat.Windows
             TextBox_HTTPAuthPassword.Password = Vars.CurrentConf.HttpAuthPassword;
             TextBox_BaiduApiKey.Text = Vars.CurrentConf.BaiduApiKey;
             TextBox_BaiduApiSecretKey.Password = Vars.CurrentConf.BaiduApiSecretKey;
+            TextBox_AzureVoiceName.Text = Vars.CurrentConf.AzureVoiceName;
             ComboBox_Engine.SelectedIndex = Vars.CurrentConf.Engine;
             ComboBox_Person.SelectedIndex = Vars.CurrentConf.SpeechPerson;
             ComboBox_PostMethod.SelectedIndex = (int)Vars.CurrentConf.ReqType;
@@ -922,7 +924,7 @@ namespace Re_TTSCat.Windows
 
         private void Hyperlink_Click_2(object sender, RoutedEventArgs e)
         {
-            Process.Start("https://ai.baidu.com/tech/speech/tts_online");
+            Process.Start("https://learn.microsoft.com/en-us/azure/ai-services/speech-service/language-support?tabs=tts");
         }
     }
 }

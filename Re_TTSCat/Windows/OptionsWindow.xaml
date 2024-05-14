@@ -501,6 +501,11 @@
                         <TextBox x:Name="TextBox_BaiduApiKey" FontFamily="Consolas" VerticalAlignment="Top" Margin="0,20,5,0" ToolTip="百度高级版引擎的 API 公钥" HorizontalAlignment="Right" Width="286" />
                         <local:IconTextBlock x:Name="TextBlock_BaiduApiSecretKey" Margin="0,41,98,0" IconGlyph="&#xF084;" Text="百度高级版 API 私钥/Azure Key" VerticalAlignment="Top" HorizontalAlignment="Right" />
                         <PasswordBox x:Name="TextBox_BaiduApiSecretKey" VerticalAlignment="Top" Margin="0,56,5,0" ToolTip="百度高级版引擎的 API 私钥" HorizontalAlignment="Right" Width="286" />
+                        <TextBox x:Name="TextBox_AzureVoiceName" FontFamily="Consolas" VerticalAlignment="Top" Margin="0,90,5,0" ToolTip="Azure声音角色，留空则为zh-CN-XiaoxiaoNeural" HorizontalAlignment="Right" Width="286" />
+                        <local:IconTextBlock x:Name="TextBlock_AzureVoiceName" Margin="0,75,166,0" IconGlyph="&#xF007;" Text="Azure Voice Name" VerticalAlignment="Top" HorizontalAlignment="Right"/>
+                        <TextBlock Margin="0,75,10,0" HorizontalAlignment="Right" VerticalAlignment="Top">
+                            <Hyperlink Click="Hyperlink_Click_2" ToolTip="Azure Document">了解更多</Hyperlink>
+                        </TextBlock>
                         <Button x:Name="Button_ClearCache" Margin="0,0,85,5" HorizontalAlignment="Right" Width="75" Click="Button_ClearCache_Click" Height="25" VerticalAlignment="Bottom">
                             <local:IconTextBlock IconGlyph="&#xF2ED;" Text="清理缓存"/>
                         </Button>

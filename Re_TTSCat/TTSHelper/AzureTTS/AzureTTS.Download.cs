@@ -21,8 +21,12 @@ namespace Re_TTSCat
                 var contentType = "application/ssml+xml";
                 var userAgent = "RE-TTSCat";
                 var outputFormat = "audio-16khz-128kbitrate-mono-mp3";
+                // use default zh-CN-XiaoxiaoNeural if not set
+                var AzureCharacter = string.IsNullOrEmpty(Vars.CurrentConf.AzureVoiceName) ? "zh-CN-XiaoxiaoNeural" : Vars.CurrentConf.AzureVoiceName;
                 var TtsContnet = "<speak version='1.0' xml:lang='en-US'>" +
-                   "<voice name='zh-CN-XiaoxiaoNeural'>" +
+                   "<voice name='" +
+                   AzureCharacter +
+                   "'>" +
                    content +
                    "</voice>" +
                    "</speak>";

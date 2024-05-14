@@ -245,6 +245,10 @@ namespace Re_TTSCat.Data
         /// 百度 API 私钥 / Azure Application Key
         /// </summary>
         public string BaiduApiSecretKey { get; set; }
+        /// <summary>
+        /// Azure Voice Name
+        /// </summary>
+        public string AzureVoiceName { get; set; }
 
         /// <summary>
         /// 在连接成功后读出的内容，留空以禁用
